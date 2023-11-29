@@ -1,0 +1,20 @@
+
+.gJSBO {
+    display: flex;
+    background-color: white;
+    padding-inline-start: 16px;
+    font-size: 16px;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 100%;
+}
+.coDuYM {
+    max-width: 1170px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    direction: ltr;
+    width: calc(100% - 30px) !important;
+}
