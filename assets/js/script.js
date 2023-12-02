@@ -141,9 +141,7 @@ for (let i = 0; i < accordionBtn.length; i++) {
 
         accordion[i].classList.remove('active');
         accordionBtn[i].classList.remove('active');
-
       }
-
     }
 
     this.nextElementSibling.classList.toggle('active');
@@ -157,7 +155,7 @@ for (let i = 0; i < accordionBtn.length; i++) {
 
 // I do this !---------------------------------------------------
 function getTimeDisccount() {
-  if(window.location.href=='http://127.0.0.1:5500/index.html'){
+  if(window.location.href=='file:///E:/pharmacy%20system/front/index.html'){
     // this time stop of the interval
   let dateinterval = new Date(2023, 12, 18, 3, 0, 0).getTime();
   let day_ele = document.querySelectorAll(".countdown-box .countdown-content .display-Day")
@@ -221,7 +219,7 @@ else if(Catogary=='best Offers'){
   product=best_Offers
 }
 else{
-  if(window.location.href=='http://127.0.0.1:5500/index.html'){
+  if(window.location.href=='file:///E:/pharmacy%20system/front/index.html'){
     product=some_product
   }
   else{
@@ -288,6 +286,7 @@ function add (key,name_product){
   }
   function searchProducts() {
     // Get the search term from the input field
+    console.log("ok")
     let searchTerm = document.getElementById('searchInput').value.toLowerCase();
     let products=getCatogary();
       // Use regular expression to match the search term in the product descriptions

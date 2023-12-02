@@ -6,7 +6,6 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pharmacy</title>
-  <link rel="shortcut icon" href="./assets/images/logo/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="./assets/css/style-prefix.css">
   <link rel="stylesheet" href="./assets/css/procduct.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -38,9 +37,8 @@
 
         <div class="header-search-container">
 
-          <input type="search" name="search" class="search-field" placeholder="Enter your product name...">
-
-          <button class="search-btn">
+          <input type="search" id="searchInput"  name="search" class="search-field" placeholder="Enter your product name...">
+          <button class="search-btn" onclick="searchProducts()"  >
             <ion-icon name="search-outline"></ion-icon>
           </button>
 
@@ -48,7 +46,7 @@
 
         <div class="header-user-actions">
 
-          <a href="login.html" style="text-decoration: underline; color: hsl(0, 0%, 13%); font-size: large;">login</a>
+          <a href="" style="text-decoration: underline; color: hsl(0, 0%, 13%); font-size: large;">login</a>
           <a href="Client_profile.html"> <button class="action-btn">
               <ion-icon name="person-outline"></ion-icon>
             </button></a>
@@ -59,7 +57,7 @@
             <span class="count">0</span>
           </button>
 
-          <a href="#"><button class="action-btn">
+          <a href="chexkout.html"><button class="action-btn">
               <ion-icon name='cart-outline'></ion-icon>
               <span class="count" id="count_bag">0</span>
             </button>
@@ -257,7 +255,6 @@
 
       <button class="action-btn">
         <ion-icon name="bag-handle-outline"></ion-icon>
-
         <span class="count">0</span>
       </button>
 
@@ -806,6 +803,13 @@
           <li class="footer-nav-item">
             <a href="#" class="footer-nav-link">Contact us</a>
           </li>
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Rate US</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">FeedBack</a>
+          </li>
 
 
 
@@ -897,7 +901,6 @@
 
 </body>
 <script type src="./assets/js/script.js"></script>
-<script type src="./assets/js/getData.js"></script>
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
